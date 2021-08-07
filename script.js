@@ -71,5 +71,5 @@ var display = (data) => {
 var clear= ()=>{
    document.getElementById("title-moviedata").value=""
 }
-var errordisplay(){
+var errordisplay =()=>{
    result.innerHTML =`<p>${data.Error}</p>`}
