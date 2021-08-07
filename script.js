@@ -32,12 +32,13 @@ async function data() {
    if(moviename === ""){
       alert('Enter the movie name');}
    
-
+else{
   let res = await fetch(url + moviename);
 
   let data = await res.json();
   clear();
   display(data);
+}
 }
 
 var display = (data) => {
