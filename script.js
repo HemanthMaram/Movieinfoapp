@@ -29,9 +29,9 @@ document.body.append(div1);
 async function data() {
   var moviename = document.getElementById("title-moviedata").value;
   console.log(moviename)
-  /* if(moviename === ""){
+   if(moviename === ""){
       alert('Enter the movie name!')
-     }*/
+     }
    
 
   let res = await fetch(url + moviename);
@@ -48,8 +48,8 @@ var display = (data) => {
        result.innerHTML =`<p>${data.Error}</p>`
    }
   
-   else{  
-  result.innerHTML = `
+   else{ 
+       result.innerHTML = `
    <img class="img-thumbnail img-responsive" width="150" height="150" src="${data.Poster}">
    <h2> ${data.Title}</h2>
    <b>${data.Title}/Cast&Crew</b>
@@ -63,6 +63,7 @@ var display = (data) => {
    <h6> ${data.Genre}</h6>
    <h6> IMDB-Rating : ${data.imdbRating}</h6>
    <p></p>
+ 
    
    `}
    
