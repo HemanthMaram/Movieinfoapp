@@ -38,13 +38,14 @@ async function data() {
 
   let data = await res.json();
   clear();
+
   display(data);
 
 }
 
 var display = (data) => {
   console.log(data);
-   if(data.response ===false){
+   if(data.response ==="False"){
        errordisplay();
    }
   
