@@ -30,20 +30,25 @@ async function data() {
   var moviename = document.getElementById("title-moviedata").value;
   console.log(moviename)
    if(moviename === ""){
-      confirm('Enter the movie name!')
+      alert('Enter the movie name!')
      }
    
-else{
+
   let res = await fetch(url + moviename);
 
   let data = await res.json();
   clear();
   display(data);
-}
+
 }
 
 var display = (data) => {
   console.log(data);
+   if(data.response ===undefined){
+       result.innerHTML =`<p>${data.Error}</p>`
+   }
+   else{
+     
   result.innerHTML = `
    <img class="img-thumbnail img-responsive" width="150" height="150" src="${data.Poster}">
    <h2> ${data.Title}</h2>
@@ -60,6 +65,7 @@ var display = (data) => {
    <p></p>
    
    `
+   }
 };
 var clear= ()=>{
    document.getElementById("title-moviedata").value=""
