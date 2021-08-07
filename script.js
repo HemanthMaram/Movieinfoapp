@@ -30,7 +30,8 @@ async function data() {
   var moviename = document.getElementById("title-moviedata").value;
  // console.log(moviename)
    if(moviename === ""){
-      alert('Enter the movie name');}
+      alert('Enter the movie name')
+      location.reload();}
    
 else{
   let res = await fetch(url + moviename);
