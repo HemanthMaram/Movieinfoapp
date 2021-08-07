@@ -47,7 +47,7 @@ var display = (data) => {
    if(!data.response){
        result.innerHTML =`<p>${data.Error}</p>`
    }
-   else{
+  
      
   result.innerHTML = `
    <img class="img-thumbnail img-responsive" width="150" height="150" src="${data.Poster}">
@@ -65,7 +65,7 @@ var display = (data) => {
    <p></p>
    
    `
-   }
+   
 };
 var clear= ()=>{
    document.getElementById("title-moviedata").value=""
