@@ -46,7 +46,7 @@ async function data() {
 var display = (data) => {
   console.log(data);
    if(data.response ==="False"){
-       errordisplay();
+       result.innerHTML =`<p>${data.Error}</p>`
    }
   
    else{ 
@@ -72,5 +72,4 @@ var display = (data) => {
 var clear= ()=>{
    document.getElementById("title-moviedata").value=""
 }
-var errordisplay =()=>{
-   result.innerHTML =`<p>${data.Error}</p>`}
+
