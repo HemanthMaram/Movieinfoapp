@@ -44,7 +44,7 @@ async function data() {
 
 var display = (data) => {
   console.log(data);
-   if(data.response ===undefined){
+   if(!data.response){
        result.innerHTML =`<p>${data.Error}</p>`
    }
    else{
