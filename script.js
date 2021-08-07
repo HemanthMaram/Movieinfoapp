@@ -44,11 +44,11 @@ async function data() {
 
 var display = (data) => {
   console.log(data);
-   if(!data.response){
+   if(data.response ===false){
        result.innerHTML =`<p>${data.Error}</p>`
    }
   
-     
+   else{  
   result.innerHTML = `
    <img class="img-thumbnail img-responsive" width="150" height="150" src="${data.Poster}">
    <h2> ${data.Title}</h2>
@@ -64,7 +64,7 @@ var display = (data) => {
    <h6> IMDB-Rating : ${data.imdbRating}</h6>
    <p></p>
    
-   `
+   `}
    
 };
 var clear= ()=>{
