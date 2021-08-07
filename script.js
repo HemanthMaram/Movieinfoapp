@@ -28,7 +28,7 @@ document.body.append(div1);
 
 async function data() {
   var moviename = document.getElementById("title-moviedata").value;
- // console.log(moviename)
+  console.log(moviename)
    if(moviename === ""){
       confirm('Enter the movie name!')
      }
