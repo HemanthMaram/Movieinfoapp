@@ -29,9 +29,9 @@ document.body.append(div1);
 async function data() {
   var moviename = document.getElementById("title-moviedata").value;
   console.log(moviename)
-   if(moviename === ""){
+  /* if(moviename === ""){
       alert('Enter the movie name!')
-     }
+     }*/
    
 
   let res = await fetch(url + moviename);
