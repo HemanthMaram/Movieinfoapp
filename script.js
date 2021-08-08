@@ -1,4 +1,4 @@
-var url = "http://www.omdbapi.com/?apikey=90bacda2&t=";
+var url = "https://www.omdbapi.com/?apikey=90bacda2&t=";
 var div1 = document.createElement("div");
 div1.setAttribute("id", "main");
 div1.setAttribute("class", "container-fluid");
