@@ -1,0 +1,23 @@
+*{
+   
+   font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
+   background-color: #000;
+   color: #fff;
+}
+
+
+label{
+   font-weight: bold;
+
+}
+h1{
+   font-family:  fantasy;
+   color: red;
+   font-weight: bolder;
+   
+}
+h2{
+  
+   font-weight: bold;
+   font-family: Trattatello, fantasy;
+}
